@@ -6,20 +6,20 @@
 
 using namespace std;
 
-
 class LRUCache {
 public:
 	LRUCache(int capacity) :_capacity(capacity) {}
 	int get(int key) {
-		auto ti = cache.find(key);
+		auto it = cache.find(key);
 		if (it == cache.end()) return -1;
 		touch(it);
-		return it->sencond.first;
+		return it->second.first;
 	}
 	void set(int key, int value) {
 		auto it = cache.find(key);
-		if (it != cache.end()) touch(it);
-		else {
+		if (it != cache.end()) {
+			touch(it);
+		}else {
 			if (cache.size() == _capacity)
 			{
 				cache.erase(used.back());
@@ -27,16 +27,17 @@ public:
 			}
 			used.push_front(key);
 		}
-		cache(key) = { value,used.begin() };
+		cache[key] = { value,used.begin() };
 	}
 
 
 private:
 
-	typedef list<int> LI;
-	typedef pair<int, LI::iterator> PII;
-	typedef unordered_map<int, PII> HIPII;
-	void touch(HIPII::iterator it) {
+	typedef list<int> _list;
+	typedef pair<int, _list::iterator> _pair;
+	typedef unordered_map<int, _pair> _unmap;
+	void touch(_unmap::iterator it) 
+	{
 		int key = it->first;
 		used.erase(it->second.second);
 		used.push_front(key);
@@ -44,8 +45,6 @@ private:
 	}
 
 	int _capacity;
-	LI used;
-	HIPII cache;
-
-
+	_list used;
+	_unmap cache;
 };
