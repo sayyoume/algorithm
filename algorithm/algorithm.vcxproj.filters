@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="leecode">
+      <UniqueIdentifier>{a1110490-388b-4158-85aa-3869e993b00a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="alg">
+      <UniqueIdentifier>{433c06f6-9cce-479a-9bde-dab4b6ff08f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{699a4201-e578-4c7d-9ce6-1a20b7d559d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stl">
+      <UniqueIdentifier>{6fc27084-da4c-4029-9d75-c236ee16c119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="c">
+      <UniqueIdentifier>{d2cc2f36-736d-4f9c-926d-ef8c7f1b568a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="algorithm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="alg\MergeSort.cpp">
+      <Filter>alg</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="leecode\1twoSum.h">
+      <Filter>leecode</Filter>
+    </ClInclude>
+    <ClInclude Include="leecode\2addTwoNumbers.h">
+      <Filter>leecode</Filter>
+    </ClInclude>
+    <ClInclude Include="leecode\3lengthofSubstring.h">
+      <Filter>leecode</Filter>
+    </ClInclude>
+    <ClInclude Include="leecode\4findMedianSortedArrays.h">
+      <Filter>leecode</Filter>
+    </ClInclude>
+    <ClInclude Include="alg\gragh.h">
+      <Filter>alg</Filter>
+    </ClInclude>
+    <ClInclude Include="alg\LRU.h">
+      <Filter>alg</Filter>
+    </ClInclude>
+    <ClInclude Include="alg\rk.h">
+      <Filter>alg</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="bf.h">
+      <Filter>alg</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.h">
+      <Filter>stl</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicProgramming.h">
+      <Filter>alg</Filter>
+    </ClInclude>
+    <ClInclude Include="01knapsack.h">
+      <Filter>alg</Filter>
+    </ClInclude>
+    <ClInclude Include="c\memcopy.hpp">
+      <Filter>c</Filter>
+    </ClInclude>
+    <ClInclude Include="InvertBinaryTree.h">
+      <Filter>alg</Filter>
+    </ClInclude>
+    <ClInclude Include="Permutation.h">
+      <Filter>alg</Filter>
+    </ClInclude>
+    <ClInclude Include="c\Singleton.h">
+      <Filter>c</Filter>
+    </ClInclude>
+    <ClInclude Include="选择排序.h">
+      <Filter>alg</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
